@@ -1,5 +1,6 @@
 # OCR GCSE Business Revision Website
 
+
 ## Why you may see a blank screen on GitHub Pages
 
 If GitHub Pages is serving the **repository source** directly, this app can appear blank because `index.html` points to `src/main.jsx` (which contains JSX and must be built by Vite first).
@@ -30,3 +31,20 @@ npm run dev
 ```bash
 npm run build
 ```
+=======
+## GitHub Pages deployment fix
+
+This project is configured for GitHub Pages static hosting:
+
+- Uses `HashRouter` so page routing works without server-side rewrites.
+- Uses Vite `base: './'` so asset paths resolve correctly on project pages.
+
+If you deploy with GitHub Pages, ensure you upload the **`dist/`** folder output from:
+
+```bash
+npm install
+npm run build
+```
+
+Then publish from the built static files.
+
