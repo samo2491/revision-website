@@ -31,7 +31,11 @@ npm run dev
 ```bash
 npm run build
 ```
-=======
+
+
+### CI note
+
+GitHub Actions workflow uses `npm install` (not `npm ci`) so deployment works even if a lock file is not present.
 ## GitHub Pages deployment fix
 
 This project is configured for GitHub Pages static hosting:
